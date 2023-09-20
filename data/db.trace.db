@@ -1,0 +1,6 @@
+2023-09-19 21:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE [*]IF NOT EXSIST `user` ( id bigint AUTO_INCREMENT primary key, username varchar(255) not null, password varchar(255) not null, email varchar(255) not null )"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXSIST `user` ( id bigint AUTO_INCREMENT primary key, username varchar(255) not null, password varchar(255) not null, email varchar(255) not null ) [42001-214]
+2023-09-19 22:10:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into [*]user (email,password,username,id) values (?,?,?,default)"; expected "identifier"; SQL statement:
+insert into user (email,password,username,id) values (?,?,?,default) [42001-214]
